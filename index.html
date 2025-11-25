@@ -5,33 +5,59 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
     <link rel="stylesheet" href="/portfolio.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <h1>Scott Whitelock</h1>
-    </header>
-    <nav>
-        <a>About Me</a>
-        <a>Projects</a>
-        <a>Skills</a>
-        <a>Contact</a>
-    </nav>
-    <section>
-        <h2>About Me</h2>
-        <p>Hi, I’m Scott! I’ve spent the past decade working across education, content creation, and operations management. Along the way, I found myself increasingly drawn to solving problems with tech, so I started learning to code. I’m now building up my programming skills to automate processes, create tools, and develop projects that improve the way I work.</p>
+    <div class="top-bar">
+        <header class="header">
+            <h1>Scott Whitelock</h1>
+        </header>
+        <nav class="nav-menu">
+            <a href="#about-me">About Me</a>
+            <a href="#projects">Projects</a>
+            <a href="#skills">Skills</a>
+            <a href="/contact.html">Contact</a>
+        </nav>
+    </div>
+    <section class="about-me">
+        <div class="about-me-text">
+            <h2 id="about-me">About Me</h2>
+            <p>Hi, I’m Scott! I’ve spent the past decade working across education, content creation, and operations management. Along the way, I found myself increasingly drawn to solving problems with tech, so I started learning to code. I’m now building up my programming skills to automate processes, create tools, and develop projects that improve the way I work.</p>
+        </div>
+        <img src="https://media.licdn.com/dms/image/v2/D5603AQFsR7WbidJfoA/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1676872004333?e=1765411200&v=beta&t=iucmDw2YUlreFLyNCTK_1vWDkL73W3XFpSgZebMvRVU" id="selfie-image">
     </section>
     <section>
         <h2>Projects</h2>
-        <ul>
-            <li>Task Tracker</li>
-            <p>This is a simple task management app built with HTML, CSS, and JavaScript. It allows users to create, edit, and delete tasks, mark items as completed, and filter them by status. All tasks are saved in the browser using localStorage, so the list stays intact even after refreshing the page. This project helped me practice DOM manipulation, event handling, and basic data persistence.</p>
-            <li>Weather Lookup App</li>
-            <p>This project is a lightweight weather search tool that fetches real-time data from an open weather API. Users can enter a city name and instantly see the current temperature, conditions, and humidity, along with relevant icons. I built this to learn how to work with external APIs, handle asynchronous JavaScript, and create a clean, responsive UI.</p>
-            <li>Interactive Football Game</li>
-            <p>This project is a fun, browser-based quiz game built with HTML, CSS, and JavaScript. Users answer multiple-choice questions, receive instant feedback, and get a final score at the end of the quiz. The app features dynamic question loading, simple animations, and a progress indicator to improve the user experience. Building this helped me practice handling user input, updating the UI with JavaScript, and structuring small interactive applications.</p>
-        </ul>
+    <ul class="projects" id="projects">
+        <li id="task-tracker">
+            Task Tracker
+            <p id="task-tracker-p">
+                This is a simple task management app built with HTML, CSS, and JavaScript. It allows users to create, edit, and delete tasks, mark items as completed, and filter them by status. All tasks are saved in the browser using localStorage, so the list stays intact even after refreshing the page. This project helped me practice DOM manipulation, event handling, and basic data persistence.
+            </p>
+        </li>
+
+        <li id="weather-app">
+            Weather Lookup App
+            <p id="weather-app-p">This project is a lightweight weather search tool that fetches real-time data from an open weather API. Users can enter a city name and instantly see the current temperature, conditions, and humidity, along with relevant icons. I built this to learn how to work with external APIs, handle asynchronous JavaScript, and create a clean, responsive UI.
+
+            </p>
+        </li>
+
+        <li id="football-game">
+            Interactive Football Game
+            <p id="football-game-p">This project is a fun, browser-based football quiz game built with HTML, CSS, and JavaScript. Users answer multiple-choice questions, receive instant feedback, and get a final score at the end of the quiz. The app features dynamic question loading, simple animations, and a progress indicator to improve the user experience. Building this helped me practice handling user input, updating the UI with JavaScript, and structuring small interactive applications.
+                
+            </p>
+        </li>
+    </ul>
+
         <section>
-            <h2>Skills</h2>
+            <h2 id="skills">Skills</h2>
             <ul>
                 <img class='skill-img' src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/1200px-HTML5_logo_and_wordmark.svg.png" alt="HTML5" title="HTML5">
                 <img class='skill-img' src="https://cdn4.iconfinder.com/data/icons/flat-brand-logo-2/512/css3-512.png" alt="CSS3" title="CSS3">
